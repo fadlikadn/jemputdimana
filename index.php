@@ -9,6 +9,10 @@
                 <i class="fas fa-align-justify"></i>
                 <!-- <span>Toggle Sidebar</span> -->
             </button>
+
+            <button type="button" class="btn btn-success addPerjalanan">
+                <i class="fa fa-plus"></i>
+            </button>
         </div>
     </nav>
 
@@ -28,8 +32,8 @@
                         <th>Edit</th>
                         <th>Delete</th>
                     </thead>
-                    <tbody>
-                        <tr>
+                    <tbody class="perjalanan-list">
+                        <!-- <tr>
                             <td><input type="checkbox" class="checkthis" /></td>
                             <td>Perjalanan 1</td>
                             <td>Sopir 1</td>
@@ -37,15 +41,60 @@
                             <td>Email 1</td>
                             <td>Tanggal</td>
                             <td>Jam 1</td>
-                            <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p></td>
-                            <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p></td>
-                        </tr>
+                            <td><p data-placement="top" data-toggle="tooltip" title="Edit">
+                                <button class="btn btn-primary" type="button" data-title="Edit" data-toggle="modal" data-target="#edit" >
+                                    <span>Edit</span>
+                                </button>
+                            </p></td>
+                            <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger" type="button" data-title="Delete" data-toggle="modal" data-target="#delete" >
+                                <span>Delete</span>
+                            </button></p></td>
+                        </tr> -->
                     </tbody>
                 </table>
             </div>
         </div>
     </div>
     
+</div>
+
+<div class="modal fade" id="add-edit" tabindex="-1" role="dialog" aria-labelledby="edit" aria-hidden="true" mode="" obj-id="">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
+                <h4 class="modal-title custom_align" id="Heading">Menambah Perjalanan</h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <input class="form-control control input-title" type="text" placeholder="Perjalanan">
+                </div>
+                <div class="form-group">
+                    <input class="form-control control input-driver" type="text" placeholder="Sopir">
+                </div>
+                <div class="form-group">
+                    <input class="form-control control input-phone" type="text" placeholder="Telepon">
+                </div>
+                <div class="form-group">
+                    <input class="form-control control input-email" type="text" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <input class="form-control control input-date" type="text" placeholder="Tanggal">
+                </div>
+                <div class="form-group">
+                    <input class="form-control control input-time" type="text" placeholder="Jam">
+                </div>
+                <div class="form-group">
+                    <textarea rows="2" class="form-control control input-note" placeholder="Note">note 1</textarea>
+                </div>
+            </div>
+            <div class="modal-footer ">
+                <button type="button" class="btn btn-warning btn-lg save-process" style="width: 100%;"><span class="glyphicon glyphicon-ok-sign"></span> Simpan</button>
+            </div>
+        </div>
+        <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
 </div>
 
 <div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="edit" aria-hidden="true">
